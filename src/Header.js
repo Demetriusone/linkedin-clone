@@ -33,6 +33,7 @@ const Header = () => {
       </div>
       <div className="header__right">
         <HeaderOption title="Home" Icon={HomeIcon} />
+        <HeaderOption title="Home" Icon={HomeIcon} />
         <HeaderOption title="My Network" Icon={SupervisorAccountIcon} />
         <HeaderOption title="Jobs" Icon={BusinessCenterIcon} />
         <HeaderOption title="Messaging" Icon={ChatIcon} />
