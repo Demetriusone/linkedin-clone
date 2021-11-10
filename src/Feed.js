@@ -13,6 +13,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
 
 const Feed = () => {
+  const form = document.querySelector(".feed__form");
   const user = useSelector(selectUser);
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
@@ -45,13 +46,13 @@ const Feed = () => {
       <div className="feed__inputContainer">
         <div className="feed__input">
           <CreateIcon />
-          <form>
+          <form onSubmit={sendPost}>
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
             />
-            <button onClick={sendPost}>Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
         <div className="feed__inputOptions">
