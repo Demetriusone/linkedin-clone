@@ -1,5 +1,7 @@
 Simple Pet-project  with REACT.JS with Redux & Firebase
 
+You can rigister and try add some posts https://linkedin-clone-yt-9d2bf.firebaseapp.com/
+
 In the project directory, you can run:
 
 ### `npm start`
